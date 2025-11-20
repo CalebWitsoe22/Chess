@@ -7,14 +7,18 @@ using std::vector;
 
 class Square {
 private:
-    location location;
+    location squareLocation;
+    bool isWhite;
 public:
-    //Square(location locate);
+    Square(location giveLocation, bool giveWhite);
+    ~Square();
 };
 
 class Board {
 private:
-    vector<Square> squares;
+    vector<vector<Square>> squares;
+public:
+    Board();
 };
 
 #endif //CHESS_BOARD_H

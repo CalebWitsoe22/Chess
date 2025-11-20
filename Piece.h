@@ -1,7 +1,6 @@
 #ifndef CHESS_PIECE_H
 #define CHESS_PIECE_H
 
-#include <iostream>
 #include "Location.h"
 
 class Piece {
