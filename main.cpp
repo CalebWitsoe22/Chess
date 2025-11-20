@@ -2,7 +2,7 @@
 using std::cout, std::endl;
 
 int main() {
-    cout<<"Hello Jackson"<<endl;
+    cout<<"Hello Destry"<<endl;
 
     return 0;
 }
