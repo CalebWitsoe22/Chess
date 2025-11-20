@@ -2,11 +2,7 @@
 #define CHESS_PIECE_H
 
 #include <iostream>
-
-struct location {
-    int row;
-    int column;
-};
+#include "Location.h"
 
 class Piece {
 protected:
