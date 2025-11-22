@@ -1,9 +1,12 @@
 #include "Board.h"
+#include "Location.h"
 #include <iostream>
-using std::cout, std::endl;
+#include <vector>
+using std::cout, std::endl, std::vector;
 
+Square::Square() : squareLocation() , isWhite(){};
 Square::Square(location giveLocation, bool giveWhite) : squareLocation(giveLocation) , isWhite(giveWhite){};
-Square::~Square() {};
+Square::~Square() = default;
 
 Board::Board() : squares(8, vector<Square>(8)){
     bool holdWhite = true;

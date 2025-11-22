@@ -6,10 +6,11 @@
 using std::vector;
 
 class Square {
-private:
+protected:
     location squareLocation;
     bool isWhite;
 public:
+    Square();
     Square(location giveLocation, bool giveWhite);
     ~Square();
 };

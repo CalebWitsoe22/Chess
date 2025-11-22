@@ -4,8 +4,8 @@ project(Chess)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(Chess main.cpp
-        Piece.h
         Piece.cpp
-        Board.h
+        Piece.h
         Board.cpp
+        Board.h
         Location.h)
