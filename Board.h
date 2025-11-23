@@ -9,9 +9,10 @@ class Square {
 protected:
     location squareLocation;
     bool isWhite;
+    bool isOccupied;
 public:
     Square();
-    Square(location giveLocation, bool giveWhite);
+    Square(location giveLocation, bool giveWhite, bool giveOccupied);
     ~Square();
 };
 

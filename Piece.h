@@ -1,6 +1,11 @@
 #ifndef CHESS_PIECE_H
 #define CHESS_PIECE_H
 
+#include <vector>
+#include <iostream>
+#include <fstream>
+
+#include "Board.h"
 #include "Location.h"
 
 class Piece {
@@ -47,4 +52,13 @@ public:
     ~Queen() override;
     void movePiece(int &row, int &column) override;
 };
-#endif //CHESS_PIECE_H
+
+class King : public Piece {
+public:
+    King(location giveLocation, bool giveColor);;
+    ~King() override;
+    void movePiece(int &row, int &column) override;
+};
+
+void placePieceStart(vector<Piece *> pieces, std::ifstream fIn);
+#endif
