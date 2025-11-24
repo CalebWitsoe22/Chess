@@ -4,9 +4,9 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
-
-#include "Board.h"
 #include "Location.h"
+
+using std::vector;
 
 class Piece {
 protected:
@@ -15,6 +15,7 @@ protected:
 public:
     Piece(location giveLocation, bool giveColor);
     virtual ~Piece() = 0;
+    location getLocation();
     virtual void movePiece(int &row, int &column) = 0;
 };
 
@@ -60,5 +61,5 @@ public:
     void movePiece(int &row, int &column) override;
 };
 
-void placePieceStart(vector<Piece *> pieces, std::ifstream fIn);
+void placePieceStart(vector<Piece *> &pieces, std::ifstream &fIn);
 #endif
